@@ -3,11 +3,9 @@
 body {
   margin: 0 auto;
   padding: 0;
-  background-color: black;
 }
 
 .wrapper {
-  background-color: white;
   width: 80%;
   margin: 0 auto;
 }
@@ -16,29 +14,39 @@ body {
   background-color: black;
 }
 
-.banner {
+.section {
   margin: 20px auto;
+}
+
+.banner {
+  margin: 0 auto;
   text-align: center;
+  background-color: lightgrey !important;
+  height: 500px;
 }
 
 footer {
   padding: 30px 0;
-  width: 80%;
+  background-color: black;
+  color: white;
+  width: 100%;
   margin: 0 auto;
   overflow: auto;
 }
 footer .two-column {
+  width: 80%;
   margin: 0 auto;
 }
 
 /* ---  Navigation --- */
 .primary-nav {
+  width: 80%;
   margin: 0 auto;
 }
 .primary-nav ul {
   display: inline-block;
   float: right;
-  margin-top: 2.5%;
+  margin-top: 4%;
   color: white;
   list-style: none;
 }
@@ -94,31 +102,24 @@ body {
 }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 45px;
-  font-weight: 700;
-  margin: 0;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 2px;
+  margin: 0 auto;
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 50px;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 2px;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  margin: 0 auto;
 }
 
 h3 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 20px;
 }
 
 h4 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 18px;
   text-align: left;
   margin: 0;

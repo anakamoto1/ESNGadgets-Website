@@ -17,11 +17,9 @@ $blue: #9CAFB7;
 body {
     margin: 0 auto;
     padding: 0;
-    background-color: black;
 }
 
 .wrapper {
-    background-color: white;
     width: 80%;
     margin: 0 auto;
 }
@@ -30,18 +28,27 @@ body {
     background-color: black;
 }
 
-.banner {
+.section {
     margin: $section-spacing;
+}
+
+.banner {
+    margin: 0 auto;
     text-align: center;
+    background-color: lightgrey!important;
+    height: 500px;
 }
 
 footer {
     padding: $nav-footer-spacing;
-    width: 80%;
+    background-color: black;
+    color: white;
+    width: 100%;
     margin: 0 auto;
     overflow: auto;
 
     .two-column {
+        width: 80%;
         margin: 0 auto;
     }
 }
@@ -49,11 +56,12 @@ footer {
 /* ---  Navigation --- */
 
 .primary-nav {
+    width: 80%;
     margin: 0 auto;
     ul {
         display: inline-block;
         float: right;
-        margin-top: 2.5%;
+        margin-top: 4%;
         color: white;
         list-style: none;
     }
@@ -130,32 +138,24 @@ body {
 }
 
 h1 {
-    font-family: $main-font;
+    font-family: $header-font;
     font-size: 45px;
-    font-weight: 700;
-    margin: 0;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 2.00px;
+    margin: 0 auto;
 }
 
 h2 {
-    font-family: $main-font;
-    font-weight: 700;
-    font-size: 50px;
-
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 2.00px;
+    font-family: $header-font;
+    font-size: 40px;
+    margin: 0 auto;
 }
 
 h3 {
-    font-family: $main-font;
+    font-family: $header-font;
     font-size: 20px;
 }
 
 h4 {
-    font-family: $main-font;
+    font-family: $header-font;
     font-size: 18px;
     text-align: left;
     margin: 0;
