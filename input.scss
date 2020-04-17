@@ -1,0 +1,171 @@
+/*--- Variables --- */
+
+$main-font: 'Open Sans', sans-serif;
+$header-font: 'Oswald', sans-serif;
+
+$nav-footer-spacing: 30px 0;
+$section-spacing: 20px auto;
+
+$red: #C57B57;
+$pink: #F1AB86;
+$yellow: #F7DBA7;
+$blue: #9CAFB7;
+
+
+/*--- Sections --- */
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: black;
+}
+
+.wrapper {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: black;
+}
+
+.banner {
+    margin: $section-spacing;
+    text-align: center;
+}
+
+footer {
+    padding: $nav-footer-spacing;
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+
+    .two-column {
+        margin: 0 auto;
+    }
+}
+
+/* ---  Navigation --- */
+
+.primary-nav {
+    margin: 0 auto;
+    ul {
+        display: inline-block;
+        float: right;
+        margin-top: 2.5%;
+        color: white;
+        list-style: none;
+    }
+    
+    li {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    
+    a:hover {
+        opacity: .5;
+    }
+}
+
+/* --- Forms --- */
+
+
+/* --- Images --- */
+
+#logo {
+    width: 20%;
+    height: auto;
+}
+
+#banner {
+    
+}
+
+
+/* --- Columns --- */
+
+.two-column {
+    margin: 30px auto;
+
+    .left {
+        float: left;
+        width: 45%;
+    }
+
+    .right {
+        float: right;
+        width: 45%;
+    }
+}
+
+.three-column {
+    margin: 20px auto;
+    overflow: hidden;
+
+    .left {
+        float: left;
+        width: 30%;
+    }
+
+    .right {
+        float: right;
+        width: 30%;
+    }
+
+    .center {
+        display: inline-block;
+        width: 30%;
+    }
+
+}
+
+
+/*--- Typography --- */
+
+body {
+    font-family: $main-font;
+    font-size: 14px;
+
+}
+
+h1 {
+    font-family: $main-font;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2.00px;
+}
+
+h2 {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 50px;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2.00px;
+}
+
+h3 {
+    font-family: $main-font;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: $main-font;
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: inherit;
+    margin: 0 auto;
+
+}

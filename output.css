@@ -1,3 +1,135 @@
+/*--- Variables --- */
+/*--- Sections --- */
 body {
-
+  margin: 0 auto;
+  padding: 0;
+  background-color: black;
 }
+
+.wrapper {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: black;
+}
+
+.banner {
+  margin: 20px auto;
+  text-align: center;
+}
+
+footer {
+  padding: 30px 0;
+  width: 80%;
+  margin: 0 auto;
+  overflow: auto;
+}
+footer .two-column {
+  margin: 0 auto;
+}
+
+/* ---  Navigation --- */
+.primary-nav {
+  margin: 0 auto;
+}
+.primary-nav ul {
+  display: inline-block;
+  float: right;
+  margin-top: 2.5%;
+  color: white;
+  list-style: none;
+}
+.primary-nav li {
+  display: inline-block;
+  padding: 15px 20px;
+}
+.primary-nav a:hover {
+  opacity: 0.5;
+}
+
+/* --- Forms --- */
+/* --- Images --- */
+#logo {
+  width: 20%;
+  height: auto;
+}
+
+/* --- Columns --- */
+.two-column {
+  margin: 30px auto;
+}
+.two-column .left {
+  float: left;
+  width: 45%;
+}
+.two-column .right {
+  float: right;
+  width: 45%;
+}
+
+.three-column {
+  margin: 20px auto;
+  overflow: hidden;
+}
+.three-column .left {
+  float: left;
+  width: 30%;
+}
+.three-column .right {
+  float: right;
+  width: 30%;
+}
+.three-column .center {
+  display: inline-block;
+  width: 30%;
+}
+
+/*--- Typography --- */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: inherit;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=output.css.map */
