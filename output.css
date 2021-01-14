@@ -1,8 +1,14 @@
 /*--- Variables --- */
 /*--- Sections --- */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
+  background: #1d202b;
+  color: white;
 }
 
 .wrapper {
@@ -10,153 +16,160 @@ body {
 }
 
 .section {
-  padding: 50px 11%;
-  overflow: auto;
+  padding: 5% 11%;
+  overflow: hidden;
 }
 
 .header {
-  background-image: url(imgs/banner.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
-}
-.header .banner {
-  padding: 0 11%;
-}
-.header .box {
-  border: 1px solid white;
-  padding: 150px 30px;
-}
-.header .two-column {
-  margin: 20px auto;
-}
-.header .right {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 30px;
-  text-align: center !important;
-  animation: 2s fadeIn;
-  animation-fill-mode: forwards;
-  visibility: hidden;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
+  overflow: hidden;
+  background: black;
+  padding: 1% 11%;
 }
 
-.features {
-  background-color: #a63a3a;
-  color: white;
-  text-align: center;
-}
-.features h3 {
-  margin: 0;
-}
-.features p {
-  margin: 3px;
-}
-.features .three-column {
-  margin-top: 30px;
-}
-.features .two-column {
+.banner .left {
+  margin: 0 auto;
   text-align: left !important;
 }
-.features .two-column .left {
-  width: 20%;
-}
-.features .two-column .right {
-  width: 70%;
+.banner .right {
+  padding: 0% 0% 3% 0%;
 }
 
 .how {
-  background-color: #ededed;
-  color: black;
-  text-align: center;
+  background-color: black;
 }
-.how .two-column {
-  margin-top: 30px;
+.how .row {
+  background: #1d202b;
+  margin: 30px 0;
+  padding: 2%;
 }
 
-.about {
-  background-color: #a63a3a;
+.faqs {
+  background: none;
+}
+.faqs .question {
+  margin: 5% auto;
+}
+.faqs #question {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.contact1 {
+  background: black;
+  text-align: center;
+}
+
+.contact2 {
+  background: white;
+  margin: 0 auto;
+}
+.contact2 h3 {
+  font-size: 40px !important;
+}
+.contact2 .left {
+  width: 40% !important;
+}
+.contact2 .right {
+  width: 50% !important;
+  margin-top: 5%;
+  padding: 3%;
+  background: #1d202b;
   color: white;
-}
-.about .about-box {
-  border: 3px solid white;
-  height: 400px;
-  padding: 60px 50px 0;
-}
-.about .left {
-  border-right: 1px solid white;
-}
-
-.contact {
-  text-align: center;
-}
-.contact .two-column {
-  margin-top: 50px;
-  text-align: left !important;
-}
-.contact .right {
-  border: 3px solid black;
-  padding: 20px;
 }
 
 footer {
-  padding: 30px 0;
-  background-color: black;
-  color: white;
-  width: 100%;
-  margin: 0 auto;
-  overflow: auto;
-}
-footer .two-column {
-  width: 80%;
-  margin: 0 auto;
+  padding-left: 11%;
 }
 
 /* ---  Navigation --- */
 .primary-nav {
-  width: 80%;
+  width: 100%;
+  overflow: hidden;
   margin: 0 auto;
+  color: white;
 }
 .primary-nav ul {
-  display: inline-block;
-  float: right;
-  margin-top: 4%;
   color: white;
   list-style: none;
+  padding: 20px 0 0;
+  color: white;
 }
 .primary-nav li {
   display: inline-block;
   padding: 15px 20px;
-  color: black !important;
+}
+.primary-nav a {
+  font-family: "Cousine", monospace;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 10px 0;
 }
 .primary-nav a:hover {
-  opacity: 0.5;
+  color: white;
+  border-bottom: 3px solid #b81111;
+}
+.primary-nav #contact a {
+  border: 3px solid #b81111;
+  background: #b81111;
+  padding: 10px 35px;
+}
+.primary-nav #contact a:hover {
+  border: 3px solid #b81111;
+  color: white;
+  background: none;
+}
+.primary-nav h1 {
+  font-size: 30px;
+  padding: 20px 0;
+  color: white;
+  margin-top: 20px;
+}
+.primary-nav input#menu {
+  display: none;
 }
 
 /* --- Buttons --- */
-#banner-btn {
-  background-color: transparent;
-  border: 3px solid white;
+#nav-btn {
+  font-size: inherit;
+  font-weight: 3300;
+  font-family: inherit;
+  border: 3px solid #b81111;
+  background: #b81111;
+  padding: 10px 30px;
+  margin-left: 20px;
   color: white;
-  margin-top: 20px;
-  padding: 7px 20px;
+}
+#nav-btn:hover {
+  border: 3px solid #b81111;
+  color: white;
+  background: none;
+}
+
+#banner-btn {
   font-size: inherit;
   font-weight: 700;
   font-family: inherit;
+  margin-top: 20px;
+  border: 3px solid #b81111;
+  background: #b81111;
+  padding: 10px 35px;
+  color: white;
+}
+#banner-btn:hover {
+  border: 3px solid #b81111;
+  color: white;
+  background: none;
 }
 
 /* --- Images --- */
 #logo {
-  width: 20%;
+  width: 100%;
   height: auto;
+  margin-top: 9%;
+}
+
+#banner {
+  width: 100%;
 }
 
 #icon {
@@ -166,8 +179,12 @@ footer .two-column {
   padding: 5px;
 }
 
-#how {
-  width: 500px;
+video {
+  float: left;
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 /* --- Forms --- */
@@ -175,37 +192,67 @@ footer .two-column {
 input[type=text],
 select,
 textarea {
-  width: 100%;
-  border: 1px solid #ccc;
-  margin: 6px 0 16px;
+  width: 90%;
+  border: 1px solid black;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  margin: 10px 0 30px;
   resize: none;
+  font-family: "Cousine", monospace;
+  font-size: 18px;
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: transparent;
-  color: black;
-  padding: 10px 30px;
-  border: 3px solid #a63a3a;
+  background-color: #b81111;
+  color: white;
+  padding: 10px 35px;
+  border: 3px solid #b81111;
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
   font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: transparent;
+  color: black;
+  border: 3px solid #b81111;
 }
 
 /* Add a background color and some padding around the form */
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+  background-color: none;
+  color: black !important;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+label {
+  font-weight: 700;
 }
 
 /* --- Columns --- */
+.primary-nav .left {
+  float: left;
+  width: 20%;
+}
+.primary-nav .right {
+  float: right;
+  width: 80%;
+  text-align: right;
+}
+
+.two-column {
+  float: clear;
+  overflow: auto;
+  margin-top: 20px;
+}
 .two-column .left {
   float: left;
   width: 45%;
@@ -232,31 +279,55 @@ input[type=submit]:hover {
   width: 30%;
 }
 
+.row {
+  display: table;
+  width: 100%;
+}
+
+.col {
+  display: table-cell;
+  padding: 16px;
+  vertical-align: middle;
+  width: 50%;
+}
+
 /*--- Typography --- */
 body {
-  font-family: "Product Sans", sans-serif;
-  font-size: 14px;
+  font-family: "Cousine", monospace;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 h1 {
-  font-family: "Product Sans", sans-serif;
-  font-size: 50px;
+  font-family: "Cousine", monospace;
+  font-size: 60px;
   margin: 0 auto;
 }
 
 h2 {
-  font-family: "Product Sans", sans-serif;
+  font-family: "Cousine", monospace;
   font-size: 40px;
-  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px auto 30px;
+}
+
+h2::after {
+  background: #b81111 none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 15px auto;
+  width: 50px;
 }
 
 h3 {
-  font-family: "Product Sans", sans-serif;
-  font-size: 20px;
+  font-family: "Cousine", monospace;
+  font-size: 30px;
 }
 
 h4 {
-  font-family: "Product Sans", sans-serif;
+  font-family: "Cousine", monospace;
   font-size: 18px;
   text-align: left;
   margin: 0;
@@ -265,36 +336,105 @@ h4 {
 a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 14px;
+  font-size: inherit;
   color: inherit;
   margin: 0 auto;
 }
 
-/* ---  --- */
-.slideUp {
-  animation-name: slideUp;
-  -webkit-animation-name: slideUp;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-  visibility: visible !important;
-}
+/* --- Media Queries --- */
+@media screen and (max-width: 1055px) {
+  h1,
+h2 {
+    font-size: 30px;
+  }
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(100%);
+  .primary-nav label {
+    display: block;
+    cursor: pointer;
+    background: url(imgs/menu.png) no-repeat right center;
+    background-size: 30px;
+    margin: 2% auto;
+    padding: 50px 0 50px 50px;
   }
-  100% {
-    transform: translateY(0%);
+
+  .primary-nav .right {
+    width: 40%;
+    margin-top: -16%;
+  }
+  .primary-nav img {
+    width: 70% !important;
+    text-align: left !important;
+    float: left !important;
+  }
+  .primary-nav ul {
+    padding: 0 !important;
+    float: clear;
+  }
+  .primary-nav li {
+    margin: 0 auto;
+    text-align: right;
+    float: right;
+    clear: right;
+    width: 100%;
+  }
+  .primary-nav #contact a {
+    border: none !important;
+    text-align: right !important;
+    padding: 0 !important;
+  }
+
+  .menu-content {
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  /* Toggle Effect */
+  input:checked ~ label {
+    background-image: url(imgs/close.png);
+  }
+
+  input:checked ~ .menu-content {
+    max-height: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+  .two-column,
+.three-column,
+.right,
+.left, .row {
+    float: none !important;
+    margin: 0 auto;
+    text-align: center;
+    width: 90% !important;
+  }
+
+  .row {
+    display: inline-block;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .row img {
+    width: 100% !important;
   }
 }
-@-webkit-keyframes slideUp {
-  0% {
-    -webkit-transform: translateY(100%);
+@media screen and (max-width: 700px) {
+  .primary-nav img {
+    margin-top: 4% !important;
   }
-  100% {
-    -webkit-transform: translateY(0%);
+  .primary-nav .right {
+    margin-top: -30% !important;
+  }
+
+  .row {
+    display: inline-block;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .row img {
+    width: 100% !important;
   }
 }
 

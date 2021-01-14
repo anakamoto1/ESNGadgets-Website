@@ -4,171 +4,190 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> ESN GADGETS </title>
     <meta name="description" content="ESN Gadget's Website">
     <link rel="stylesheet" href="output.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 
-<script>
-    $(window).scroll(function() {
-        $('.three-column').each(function() {
-            var pos = $(this).offset().top;
-
-            var topOfWindow = $(window).scrollTop();
-            if (pos < topOfWindow + 1000) {
-                $(this).addClass("slideUp");
-            }
-        });
-    });
-</script>
 
 <body>
     <div class="header">
         <nav class="primary-nav">
-
-            <img id="logo" src="imgs/logo.png">
-
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="banner">
-
-            <div class="two-column">
-                <div class="two-column left">
-
-                </div>
-                <div class="two-column right">
-                    <div class="box">
-                        <h1>THE BULLET CATCHER</h1>
-                        <button id="banner-btn">Watch Video</button>
-                    </div>
+            <div class="primary-nav left">
+                <a href="#">
+                    <img src="imgs/logo.png" id="logo">
+                </a>
+            </div>
+            <div class="primary-nav right">
+                <input type="checkbox" id="menu">
+                <label for="menu"></label>
+                <div class="menu-content">
+                    <ul>
+                        <li><a href="#primavy-nav">Home</a></li>
+                        <li><a href="#how">How it works</a></li>
+                        <li><a href="https://www.ebay.com/itm/Pistol-Brass-Shell-Catcher/143913651029?hash=item2181ec0b55:g:9G8AAOSwcSxfrJ6M">SHOP</a></li>
+                        <li><a href="#faqs">FAQS</a></li>
+                        <input id="nav-btn" type="submit" value="CONTACT US" onclick="window.location='#contact1';" />
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </div>
     <div class="wrapper">
 
-        <div class="section features">
-            <h2>FEATURES</h2>
-            <div class="three-column">
-                <div class="three-column left">
-                    <div class="two-column">
-                        <div class="two-columm left">
-                            <img id="icon" src="imgs/icon.png">
-                        </div>
-                        <div class="two-column right">
-                            <h3>EXAMPLE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="three-column center">
-                    <div class="two-column">
-                        <div class="two-columm left">
-                            <img id="icon" src="imgs/icon.png">
-                        </div>
-                        <div class="two-column right">
-                            <h3>EXAMPLE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="three-column right">
-                    <div class="two-column">
-                        <div class="two-columm left">
-                            <img id="icon" src="imgs/icon.png">
-                        </div>
-                        <div class="two-column right">
-                            <h3>EXAMPLE</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="section banner">
 
-        <div class="section how">
-            <h2>HOW DOES IT WORK?</h2>
-            <div class="three-column">
-                <div class="three-column left">
-                    <img id="how" src="imgs/how.jpg">
-                    <h3>STEP 1: EXAMPLE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="three-column center">
-                    <img id="how" src="imgs/how.jpg">
-                    <h3>STEP 1: EXAMPLE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="three-column right">
-                    <img id="how" src="imgs/how.jpg">
-                    <h3>STEP 1: EXAMPLE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section about">
-            <div class="about-box">
-                <div class="two-column">
-                    <div class="two-colunm left">
-                        <img id="about-img" src="https://via.placeholder.com/400x320">
-                    </div>
-                    <div class="two-column right">
-                        <h2>ABOUT</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section contact">
-            <h2>GET IN TOUCH</h2>
             <div class="two-column">
-                <div class="three-colum left">
-                    <h3>CONTACT INFORMATION</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Email: example@email.com</p>
-                    <p> social media </p>
+                <div class="two-column left">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/vHRupmYoJ2c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="two-colum right">
-                    <div class="container">
-                        <form action="action_page.php">
+                <div class="two-column right">
+                    <h1> ESN GADGETS: PISTOL BRASS CATCHER </h1>
+                    <p> Quick, conveinent, and easy cleanup for your pistol brass! Perfectly suitable for both left and right handed shooters! </p>
 
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                            <label for="country">Country</label>
-                            <select id="country" name="country">
-                                <option value="australia">Australia</option>
-                                <option value="canada">Canada</option>
-                                <option value="usa">USA</option>
-                            </select>
-
-                            <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                            <input type="submit" value="Submit">
-
-                        </form>
-                    </div>
+                    <input id="banner-btn" type="submit" value="Watch Video" onclick="window.location='https://www.youtube.com/watch?v=vHRupmYoJ2c&feature=youtu.be';" />
                 </div>
             </div>
         </div>
 
+        <div class="section how" id="how">
+            <h2>How does it work</h2>
+            <div class="row">
+                <div class="col">
+                    <h3> Step 1: INSTALL </h3>
+                    <p>To install the arm support, start by placing your hand into the Velcro straps as shown in Fig.1.
+                    </p>
+                </div>
+
+                <div class="col">
+                    <img src="imgs/fig1.jpg" id="banner">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h3> Step 1A: ADJUST </h3>
+                    <p>
+                        For a smaller tight fit, place hand and arm inside both straps leaving 2 straps on the inside of your forearm. You may need to adjust the velcro for this. See Fig.1A.
+
+                        Position the brace on your forearm as shown in Fig.2. Adjust the straps to the desired tightness. </p>
+                </div>
+
+                <div class="col">
+                    <img src="imgs/fig1a.jpg" id="banner">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h3> Step 2: POSITION</h3>
+                    <p> Slide the net into the 2 guide rails. The height and angle of the net can be adjusted by rotating the arm support. If the nets distance and angle that it sits from your hand are not to your satisfaction, you may need to remove the net from the base and make small bends to get a perfect fit.
+                    </p>
+                </div>
+
+                <div class="col">
+                    <img src="imgs/fig2.jpg" id="banner">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h3> Step 3: ADJUST</h3>
+                    <p> The tension holding the net inside the slide rails can be adjusted by spreading the rods apart to form a slight 'V'. </p>
+                    <small>
+                        * Caution is needed when doing this….the frame is made from aluminum and can be bent. Do this at your own risk. Bending it back and forth too many times may break it. </small>
+                </div>
+
+                <div class="col">
+                    <img src="imgs/fig3.jpg" id="banner">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h3> Step 4: LINE UP </h3>
+                    <p> Line up the far edge of the catch net with the beginning of pistols ejection port.
+                    </p>
+                </div>
+
+                <div class="col">
+                    <img src="imgs/fig4.jpg" id="banner">
+                </div>
+            </div>
+
+        </div>
+
+        <!--
+        <div class="section features" id="features">
+            <h2>Features</h2>
+        </div>
+-->
+
+        <div class="section faqs" id="faqs">
+            <h2>FAQS</h2>
+            <div class="question">
+                <p id="question">Q: My net keeps slipping out from the base.</p>
+                <p id="answer"> A: Slightly bend the 2 prongs apart creating a slight V. The wider the V, the more tension it will create. When inserting the rods back into the base, lightly squeeze them together and insert them in to the desired length. This will create tension and hold net in place.</p>
+            </div>
+
+            <div class="question">
+                <p id="question">Q: The angle of the catch net does not line up with the chamber.</p>
+                <p id="answer"> A: For most users, sliding the net in/out from the guides should align the to the ejection port. If more adjustments are needed, the nets frame is made from aluminum and can be bent. If after positioning the base on your forearm, and adjusting the depth of the net into the base, you can adjust the position by slightly bending the frame to your desired location. Note: REMOVE THE NET FROM THE BASE BEFORE ATTEMPTING TO MAKE ANY ADJUSTMENTS. </p>
+            </div>
+
+            <div class="question">
+                <p id="question">Q: My net arrived out of shape.
+                </p>
+                <p id="answer"> A: The net does have some memory and if not stored in its sewn shape, it will create some deformity. Try pulling at the corners to stretch it back into shape. If it still doesn’t hold its shape, you can spray some clear varnish/clear coat on it. Adjust the deformed area and let the clear coat dry. This should fix it unless the frame is bent.
+                </p>
+            </div>
+
+            <div class="question">
+                <p id="question">Q: Does the base and net come in different colors?</p>
+                <p id="answer"> A: At this time, only black is available. We are looking into making some different colors schemes.
+                    Please check back later.
+                </p>
+            </div>
+        </div>
+
+        <div class="section contact1" id="contact1">
+            <h2>CONTACT US</h2>
+            <p>To get in touch with us, please send us an email at...</p>
+
+            <p>Email: esngadgets@email.com</p>
+        </div>
+
+        <!--
+        <div class="section contact2" id="contact2">
+            <div class="container">
+                <form action="action_page.php">
+                    <p>* ALL FIELDS REQUIRED</p><br />
+                    <label for="fname">FIRST + LAST NAME</label>
+                    <input type="text" id="fname" name="firstname" placeholder="John Doe">
+
+                    <label for="lname">EMAIL</label>
+                    <input type="text" id="lname" name="lastname" placeholder="example@email.com">
+
+                    <label for="country">SUBJECT</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Subject...">
+
+                    <label for="subject">MESSAGE</label>
+                    <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+-->
     </div>
+
 
     <footer>
         <div class="two-column">
