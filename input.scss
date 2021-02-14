@@ -5,13 +5,23 @@ monospace;
 $main-font: 'Cousine',
 monospace;
 
-$nav-footer-spacing: 1% 11%;
-$section-spacing: 5% 11%;
+$golf-font:'Lato',
+sans-serif;
 
 $red: #b81111;
 $light-grey: #2b2f40;
 $grey: #1d202b;
 $dark-grey:black;
+
+$golf-grey: #ebebeb;
+$golf-lightgreen: #779e23;
+$golf-darkgreen: #5b781c;
+
+
+
+$nav-footer-spacing: 1% 11%;
+$section-spacing: 5% 11%;
+
 
 /*--- Sections --- */
 html {
@@ -250,7 +260,6 @@ video {
 
 /* --- Forms --- */
 
-/* Style inputs with type="text", select elements and textareas */
 input[type=text],
 select,
 textarea {
@@ -265,7 +274,6 @@ textarea {
     font-size: 18px;
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
     background-color: $red;
     color: white;
@@ -280,14 +288,12 @@ input[type=submit] {
     margin: 0 auto;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
     background-color: transparent;
     color: $dark-grey;
     border: 3px solid $red;
 }
 
-/* Add a background color and some padding around the form */
 .container {
     background-color: none;
     color: $dark-grey !important;
@@ -375,7 +381,6 @@ body {
     font-family: $main-font;
     font-weight: 300;
     font-size: 18px;
-
 }
 
 h1 {
@@ -499,20 +504,21 @@ p {}
     .two-column,
     .three-column,
     .right,
-    .left, .row {
+    .left,
+    .row {
         float: none !important;
         margin: 0 auto;
         text-align: center;
         width: 90% !important;
     }
-    
-    .row{
+
+    .row {
         display: inline-block;
-        width: 100%!important;
-        margin: 0 auto!important;
-        
+        width: 100% !important;
+        margin: 0 auto !important;
+
         img {
-            width: 100%!important;
+            width: 100% !important;
         }
     }
 
@@ -529,15 +535,49 @@ p {}
             margin-top: -30% !important;
         }
     }
-    
-       .row{
+
+    .row {
         display: inline-block;
-        width: 100%!important;
-        margin: 0 auto!important;
-        
+        width: 100% !important;
+        margin: 0 auto !important;
+
         img {
-            width: 100%!important;
+            width: 100% !important;
         }
+    }
+
+}
+
+/* --- Golf Page --- */
+
+#golf {
+    
+    .header {
+        background: $golf-darkgreen;
+    }
+    
+    .banner {
+        background: $golf-grey;
+        color: black;
+    }
+    
+    .how {
+        background: white;
+        color: black;
+        
+        .row {
+            background: $golf-grey;
+        }
+    }
+
+    body,
+    p,
+    a,
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: $golf-font!important;
     }
 
 }

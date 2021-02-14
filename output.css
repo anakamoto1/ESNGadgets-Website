@@ -188,7 +188,6 @@ video {
 }
 
 /* --- Forms --- */
-/* Style inputs with type="text", select elements and textareas */
 input[type=text],
 select,
 textarea {
@@ -203,7 +202,6 @@ textarea {
   font-size: 18px;
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: #b81111;
   color: white;
@@ -217,14 +215,12 @@ input[type=submit] {
   margin: 0 auto;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: transparent;
   color: black;
   border: 3px solid #b81111;
 }
 
-/* Add a background color and some padding around the form */
 .container {
   background-color: none;
   color: black !important;
@@ -404,7 +400,8 @@ h2 {
   .two-column,
 .three-column,
 .right,
-.left, .row {
+.left,
+.row {
     float: none !important;
     margin: 0 auto;
     text-align: center;
@@ -436,6 +433,30 @@ h2 {
   .row img {
     width: 100% !important;
   }
+}
+/* --- Golf Page --- */
+#golf .header {
+  background: #5b781c;
+}
+#golf .banner {
+  background: #ebebeb;
+  color: black;
+}
+#golf .how {
+  background: white;
+  color: black;
+}
+#golf .how .row {
+  background: #ebebeb;
+}
+#golf body,
+#golf p,
+#golf a,
+#golf h1,
+#golf h2,
+#golf h3,
+#golf h4 {
+  font-family: "Lato", sans-serif !important;
 }
 
 /*# sourceMappingURL=output.css.map */
