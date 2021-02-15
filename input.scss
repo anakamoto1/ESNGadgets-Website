@@ -553,12 +553,14 @@ p {}
 #golf {
     
     .header {
-        background: $golf-darkgreen;
+        background-color: $golf-grey;
     }
     
     .banner {
-        background: $golf-grey;
-        color: black;
+        background-image: url("imgs/Rainbow%20Golf.jpg")!important;
+        background-color: #cccccc;
+        background-position: center;
+        background-size: cover;
     }
     
     .how {

@@ -436,11 +436,13 @@ h2 {
 }
 /* --- Golf Page --- */
 #golf .header {
-  background: #5b781c;
+  background-color: #ebebeb;
 }
 #golf .banner {
-  background: #ebebeb;
-  color: black;
+  background-image: url("imgs/Rainbow%20Golf.jpg") !important;
+  background-color: #cccccc;
+  background-position: center;
+  background-size: cover;
 }
 #golf .how {
   background: white;
